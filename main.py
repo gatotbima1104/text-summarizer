@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize
 from heapq import nlargest
 
 app = Flask(__name__)
+CORS(app)
 
 def nltk_extractive_summarization(text, num_sentences):
     # Tokenize the text into sentences
