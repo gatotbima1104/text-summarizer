@@ -2,3 +2,4 @@ Flask==2.3.2
 Flask-Cors==3.0.10
 nltk==3.8.1
 scikit-learn==1.2.2
+
